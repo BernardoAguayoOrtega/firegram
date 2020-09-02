@@ -1,13 +1,19 @@
+//import react
 import React from 'react';
+//import react dom
 import ReactDOM from 'react-dom';
+//import styles
 import './index.css';
+//import app component
 import App from './App';
+//import hash router component
+import { HashRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+	<Router basename='/'>
+		<App />
+	</Router>,
+	document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change
